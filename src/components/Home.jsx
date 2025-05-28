@@ -251,7 +251,7 @@ function Home() {
               <div className="h-[225px]">
                 <img
                   className="w-full h-full object-cover rounded"
-                  src="public/assets/home/bitisha.jpg"
+                  src="/assets/home/bitisha.jpg"
                   alt="image_image_1"
                 />
               </div>
@@ -275,7 +275,7 @@ function Home() {
               <div className="h-[228px]">
                 <img
                   className="w-full h-full rounded"
-                  src="public/assets/home/image_2.jpg"
+                  src="/assets/home/image_2.jpg"
                   alt="image_image_2"
                 />
               </div>
