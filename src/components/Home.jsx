@@ -56,7 +56,7 @@ function Home() {
         />
         <div className="bg-[#00000071] w-full h-full absolute top-0 z-10"></div>
         <div className="container  mx-auto">
-          <div className="h-[816px] absolute top-[25%] z-20">
+          <div className="h-[816px] absolute lg:top-[25%] top-[10%] z-20">
             <p className="text-[30px] text-white">
               Build Your Career in IT
             </p>
