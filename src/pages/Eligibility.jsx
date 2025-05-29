@@ -26,10 +26,10 @@ function Eligibility() {
               <div>
           <p className='text-[24px] font-medium text-[#281743] lg:block hidden'>Online IT Training Designed for Future Professionals</p>
           </div>
-              <p>At IT Sikshya, you have the flexibility to participate in our internship program in a way that suits you—fully online or through a hybrid model combining virtual and occasional in-person sessions.</p>
+              <p>At IT Sikshya, you have the flexibility to participate in our training program in a way that suits you—fully online or through a hybrid model combining virtual and occasional in-person sessions.</p>
               <p>Our program is designed to fit your schedule, allowing you to learn remotely with access to recorded sessions and live project collaborations.</p>
-              <p>With extensive experience in online education, IT Sikshya provides a robust digital platform where you can access all internship resources, including project materials, mentorship support, and communication tools to connect with professionals and peers.</p>
-              {/* <p className='text-[#418092] underline'>Learn more about the IT Sikshya virtual internship journey</p> */}
+              <p>With extensive experience in online education, IT Sikshya provides a robust digital platform where you can access all training resources, including project materials, mentorship support, and communication tools to connect with professionals and peers.</p>
+              {/* <p className='text-[#418092] underline'>Learn more about the IT Sikshya virtual training journey</p> */}
             </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ function Eligibility() {
               <img className='w-full' src="/assets/eligibility/eligibility_3.png" alt="eligibility_3" />
               <div className='px-4 mt-1 mb-3'>
                 <p className='text-[#11294D] text-[18px]'>Your Career: How to Become a Skilled IT Professional</p>
-                <p className='text-[#5A5965] text-[14px] mt-1 mb-2 text-justify'>If you’re finishing your internship with IT Sikshya, now’s the time to think about how to apply your skills and real-world experience to move your career forward. Here, an IT industry expert shares practical advice on becoming a successful IT professional.</p>
+                <p className='text-[#5A5965] text-[14px] mt-1 mb-2 text-justify'>If you’re finishing your training with IT Sikshya, now’s the time to think about how to apply your skills and real-world experience to move your career forward. Here, an IT industry expert shares practical advice on becoming a successful IT professional.</p>
                 <Link className='text-[#333] rounded-[14px] font-bold bg-[#ccc] py-1 px-3'>Read More</Link>
               </div>
             </div>
@@ -97,7 +97,7 @@ function Eligibility() {
               <img className='w-full' src="/assets/eligibility/eligibility_5.png" alt="eligibility_5" />
               <div className='px-4 mt-1 mb-3'>
                 <p className='text-[#11294D] text-[18px]'>How to Build the Confidence to Start Your IT Journey</p>
-                <p className='text-[#5A5965] text-[14px] my-1 text-justify'>Starting something new—whether it’s an internship, certification, or a career shift into IT—can feel overwhelming. Here are five practical tips to help you gain the confidence to take that first step and succeed in your journey.</p>
+                <p className='text-[#5A5965] text-[14px] my-1 text-justify'>Starting something new—whether it’s an training, certification, or a career shift into IT—can feel overwhelming. Here are five practical tips to help you gain the confidence to take that first step and succeed in your journey.</p>
                  <Link className='text-[#333] rounded-[14px] font-bold bg-[#ccc] py-1 px-3'>Read More</Link>
               </div>
             </div>
@@ -113,7 +113,7 @@ function Eligibility() {
             </div>
             <div className='flex flex-col gap-6 px-10 self-center'>
               <h2 className='text-[26px] font-bold text-black'>Learn from anywhere</h2>
-              <p className='text-[16px]'>At IT Sikshya, your location is never a barrier. Our online and hybrid internship program allows you to learn from anywhere—whether you're at home, on campus, or traveling.</p>
+              <p className='text-[16px]'>At IT Sikshya, your location is never a barrier. Our online and hybrid training program allows you to learn from anywhere—whether you're at home, on campus, or traveling.</p>
               <p className='text-[16px]'>Join a global community of learners, collaborate on real-world projects, and build lasting connections—all while enjoying the flexibility to balance your learning with your lifestyle.</p>
               <div className='mx-auto text-center text-[18px] font-bold my-2 py-1 px-10 bg-[#EE3A23] text-white rounded-md'>Apply Now</div>
             </div>

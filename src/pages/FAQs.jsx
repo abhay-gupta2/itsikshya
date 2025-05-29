@@ -60,7 +60,7 @@ function FAQs() {
             Kickstart Your Career with IT Sikshya
           </h2>
           <p className="text-[20px] text-white text-center my-4">
-            Sikshya offers a 100-day online IT internship for students and graduates to gain real-world experience, build a portfolio, and boost their careers—from anywhere in the world.
+            Sikshya offers a 100-day online IT training for students and graduates to gain real-world experience, build a portfolio, and boost their careers—from anywhere in the world.
           </p>
           <div className="mx-auto w-[201px] px-4 py-1 text-[20px] bg-[#FCDB2E] text-center rounded-[10px]">
             Apply Now
@@ -197,7 +197,7 @@ function FAQs() {
                 THE IT SIKSHYA DIFFERENCE
               </p>
               <p className="text-[30px] leading-none">
-                A global internship platform designed to launch your IT career
+                A global training platform designed to launch your IT career
               </p>
               <p className="text-[20px] text-[#4b4b4b] my-5">
                 IT Sikshya is committed to empowering students and recent graduates with the skills and experience needed to thrive in the tech industry.
@@ -216,7 +216,7 @@ function FAQs() {
                 <div className="flex items-start gap-3">
                   <div className="p-2 mt-1 bg-[#000]"></div>
                   <p>
-                    <strong>Global Accessibility </strong>- Join from anywhere in the world through our fully online or hybrid 100-day internship program.
+                    <strong>Global Accessibility </strong>- Join from anywhere in the world through our fully online or hybrid 100-day training program.
                   </p>
                 </div>
 

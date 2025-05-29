@@ -33,7 +33,7 @@ function Testimonials() {
             </div>
             <div className='px-6 flex flex-col gap-4'>
               <h3 className='text-[26px] font-bold'>Career Support Through Real Experience</h3>
-              <p className='text-[#4b4b4b] text-[16px]'>IT Sikshya’s Internship Program is designed to help you launch a successful career in the IT industry. Our alumni share how hands-on projects, mentorship, and structured guidance helped them build confidence and direction.</p>
+              <p className='text-[#4b4b4b] text-[16px]'>IT Sikshya’s training Program is designed to help you launch a successful career in the IT industry. Our alumni share how hands-on projects, mentorship, and structured guidance helped them build confidence and direction.</p>
               <div className='flex flex-col gap-3 text-[16px]'>
                 <div className='flex items-start gap-3'>
                   <div className='p-2 mt-1 rounded-[100%] bg-[#36D0FF]'></div>
@@ -78,7 +78,7 @@ function Testimonials() {
               <img className='h-[365px] w-full' src="/assets/testimonials/testimonials_3.png" alt="testimonials_3" />
               <p className='text-[#B0B0B3] my-2 text-[18px] font-semibold'>TRAINING STORIES</p>
               <p className='text-[24px] font-medium'>Intern Video Series: Meet Aarav Joshi</p>
-              <p className='text-[16px] font-medium text-[#A5A7A9] text-justify'>This month, we meet Aarav Joshi, an IT Sikshya intern who worked on frontend development projects during his 100-day internship.</p>
+              <p className='text-[16px] font-medium text-[#A5A7A9] text-justify'>This month, we meet Aarav Joshi, an IT Sikshya intern who worked on frontend development projects during his 100-day training.</p>
               <Link className='underline text-[#958864] text-[16px] font-medium mb-6'>READ MORE</Link>
             </div>
 
@@ -109,7 +109,7 @@ function Testimonials() {
               <img className='w-full' src="/assets/testimonials/testimonials_6.png" alt="testimonials_6" />
               <p className='py-5 bg-white px-6 text-[20px]'>How to Apply?</p>
               <div className='flex gap-2 my-2'>
-                <p className='text-[#C1CED6] bg-white text-[18px] w-full px-3'>Explore our simple online application process and take the first step toward your 100-day internship in IT.</p>
+                <p className='text-[#C1CED6] bg-white text-[18px] w-full px-3'>Explore our simple online application process and take the first step toward your 100-day training in IT.</p>
                 <img className='w-[28px] bg-white' src="/assets/icons/share.svg" alt="share" />
               </div>
             </div>

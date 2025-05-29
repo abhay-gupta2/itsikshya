@@ -26,7 +26,7 @@ function About() {
               </div>
             </div>
             <div className='w-full mt-[42px] p-1'>
-              <p className='font-semibold text-[16px]'>IT Sikshya, established to provide practical IT training and internships, connects students and graduates with real-world projects and mentorship, preparing them for successful careers in the IT industry.</p>
+              <p className='font-semibold text-[16px]'>IT Sikshya, established to provide practical IT training, connects students and graduates with real-world projects and mentorship, preparing them for successful careers in the IT industry.</p>
 
               <div className='flex mt-[20px] items-center gap-4 my-1'>
                 <img className='p-2 bg-[#646F77] rounded-full w-[30px] invert' src="/assets/icons/right-arrow.svg" alt="right-arrow" />

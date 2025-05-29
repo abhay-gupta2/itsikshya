@@ -131,6 +131,14 @@ function Header() {
                 </li>
                 <li>
                   <Link
+                    to="/courses"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Courses
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/contact"
                     onClick={() => setIsMenuOpen(false)}
                   >

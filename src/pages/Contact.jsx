@@ -87,9 +87,9 @@ function Contact() {
       <section className='max-w-[1400px] mx-auto bg-white'>
         <div className="container mx-auto py-6 text-center">
           <h2 className='text-[26px] font-[700] text-black '>Training Coordinators</h2>
-          <div className='flex justify-center my-6 gap-36 gap-y-7'>
+          <div className='flex flex-wrap my-6 gap-6 gap-y-7 max-w-[900px] mx-auto justify-between'>
             {coordinator.map((a) => (
-              <div className='text-center flex flex-col gap-0'>
+              <div className='text-center flex flex-col gap-0 mx-auto'>
                 <div className='w-[200px]'>
                   <img className='mx-auto w-full' src={a.image} alt={a.name} />
                 </div>

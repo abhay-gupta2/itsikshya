@@ -56,7 +56,7 @@ function Home() {
         />
         <div className="bg-[#00000071] w-full h-full absolute top-0 z-10"></div>
         <div className="container  mx-auto">
-          <div className="h-[816px] absolute top-[25%] z-20">
+          <div className="h-[816px] absolute lg:top-[25%] md:top-[25%] sm:top-[25%] top-[10%] z-20">
             <p className="text-[30px] text-white">
               Build Your Career in IT
             </p>
@@ -170,9 +170,9 @@ function Home() {
               IT Training Program
             </h4>
             <p className="text-[18px] mb-6 text-justify">
-              IT Sikshya welcomes students and recent graduates from any university worldwide who are English proficient and eager to start a career in IT. Our Hybrid/Online 100-day Training Program provides practical experience by involving the interns in real-time projects under professional guidance, allowing them to learn and build a portfolio to strengthen their resumes.
+              IT Sikshya welcomes students and recent graduates from any university worldwide who are English proficient and eager to start a career in IT. Our Hybrid/Online 100-day Training Program provides practical experience by involving the students in real-time projects under professional guidance, allowing them to learn and build a portfolio to strengthen their resumes.
               <br /><br />
-              The program is virtual and can be joined from any location, with a focus on technical and professional skill development. The interns receive a certificate of completion and, based on performance, a recommendation letter to support their professional growth. IT Sikshya is dedicated to preparing the future generation of IT professionals with hands-on experience and real-world exposure.
+              The program is virtual and can be joined from any location, with a focus on technical and professional skill development. The students receive a certificate of completion and, based on performance, a recommendation letter to support their professional growth. IT Sikshya is dedicated to preparing the future generation of IT professionals with hands-on experience and real-world exposure.
             </p>
             <span className="bg-[#11294D] px-3 py-2 text-white text-[18px] rounded-[15px] font-[500]">
               Apply Now
@@ -251,7 +251,7 @@ function Home() {
               <div className="h-[225px]">
                 <img
                   className="w-full h-full object-cover rounded"
-                  src="public/assets/home/bitisha.jpg"
+                  src="/assets/home/bitisha.jpg"
                   alt="image_image_1"
                 />
               </div>
@@ -275,7 +275,7 @@ function Home() {
               <div className="h-[228px]">
                 <img
                   className="w-full h-full rounded"
-                  src="public/assets/home/image_2.jpg"
+                  src="/assets/home/image_2.jpg"
                   alt="image_image_2"
                 />
               </div>
