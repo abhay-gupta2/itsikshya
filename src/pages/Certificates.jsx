@@ -29,7 +29,7 @@ function Certificates() {
   }, []);
 
   useEffect(() => {
-      document.title = "IT Sikshya Certificates | Professional Marketplace"
+      document.title = "Certificates | IT Sikshya"
     }, []);
   return (
     <>

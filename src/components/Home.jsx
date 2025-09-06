@@ -4,46 +4,77 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 function Home() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   useEffect(() => {
-    document.title = "IT Sikshya | Professional Marketplace"
+    document.title = "IT Sikshya"
   }, []);
+
+  const testimonails = [
+    {
+      src: "/assets/home/salina.jpg",
+      description: "Even though my internship was remote, it was very effective as I received continuous guidance and support throughout the period. Working in a collaborative environment with regular feedback boosted my confidence and problem-solving abilities. I also got a clearer view of how companies work in the tech field, which has motivated me to further pursue a career in web development.",
+      name: "Salina Bastola",
+      team: "React Js Developer"
+    },
+    {
+      src: "/assets/home/1.jpeg",
+      description: "Beyond programming, this internship strengthened my problem-solving, communication, and teamwork abilities. It was a great introduction to working in a production-level setting with a focus on clean, maintainable code. I’m thankful to the SRIYOG team for their mentorship, which helped boost my confidence as a budding developer",
+      name: "Sarad Kunwar",
+      team: "React Native Developer"
+    },
+    {
+      src: "/assets/home/bitisha.jpg",
+      description: "My 3-month internship as a React JS Developer at SRIYOG Consulting Pvt. Ltd. provided me the opportunity to work on real-time web projects. I developed reusable components, implemented state management, and contributed to building scalable user interfaces. This helped me understand best practices in component-based architecture.",
+      name: "Bitisha Thapa",
+      team: "React Js Developer"
+    },
+
+  ]
 
   const graduates = [
     {
-      name: 'Lalita',
-      src: '/assets/home/graduates/image_1.png',
-      alt: 'Lalita',
-      team: 'React JS'
+      name: 'Sakchyam',
+      src: '/assets/home/graduates/5.webp',
+      alt: 'Sakchyam',
+      team: 'Flutter'
     },
     {
-      name: 'Salina',
-      src: '/assets/home/graduates/image_2.png',
-      alt: 'Salina',
-      team: 'React JS'
-    },
-    {
-      name: 'Abhay',
-      src: '/assets/home/graduates/image_3.png',
-      alt: 'Abhay',
-      team: 'React JS'
+      name: 'Sagar',
+      src: '/assets/home/graduates/3.webp',
+      alt: 'sagar',
+      team: 'Next Js'
     },
     {
       name: 'Sarad',
-      src: '/assets/home/graduates/image_4.png',
-      alt: 'Sharad',
+      src: '/assets/home/graduates/1.webp',
+      alt: 'sarad',
       team: 'React Native'
     },
     {
-      name: 'Bitisha',
-      src: '/assets/home/graduates/bitisha.png',
-      alt: 'Bitisha',
-      team: 'React JS'
+      name: 'Aashma',
+      src: '/assets/home/graduates/2.webp',
+      alt: 'aashma',
+      team: 'Backend'
     },
+
+    {
+      name: 'Milan',
+      src: '/assets/home/graduates/4.webp',
+      alt: 'Milan',
+      team: 'UI/UX'
+    },
+    {
+      name: 'Bitisha',
+      src: '/assets/home/graduates/6.webp',
+      alt: 'Bitisha',
+      team: 'React Js'
+    },
+
   ];
 
   return (
@@ -69,14 +100,32 @@ function Home() {
 
       <section className="mb-6 mt-12 max-w-[1400px] mx-auto">
         <div className="container mx-auto">
-          <form action="#" className="flex gap-8 flex-wrap">
-            <input type="text" className="outline-none py-3 px-4 border-2 rounded capitalize" placeholder="First Name" name="" />
-            <input type="text" className="outline-none py-3 px-4 border-2 rounded capitalize" placeholder="Last Name" name="" />
+          <form action="#" className="flex justify-between flex-wrap gap-y-6">
+            <input type="text" className="outline-none py-2 px-3 border-2 rounded capitalize" placeholder="First Name" name="" />
+            <input type="text" className="outline-none py-2 px-3 border-2 rounded capitalize" placeholder="Last Name" name="" />
+            <select
+              name="Course"
+              id="course"
+              className="outline-none px-3 py-2 rounded border-2"
+              defaultValue=""
+            >
+              <option value="" disabled>Select a Course</option>
+              <option value="uiux">UI/UX</option>
+              <option value="reactjs">React Js</option>
+              <option value="nextjs">Next Js</option>
+              <option value="mongodb">Mongo DB</option>
+              <option value="flutter">Flutter</option>
+              <option value="reactnative">React Native</option>
+              <option value="pitchdeck">Pitch Deck Creation</option>
+              <option value="webdesign">Web Design</option>
+              <option value="mobiledev">Mobile App Development</option>
+            </select>
+
             <div>
               <select
                 name="country"
                 id="country"
-                className="outline-none px-4 py-3 rounded border-2 border-e-0"
+                className="outline-none px-3 py-2 rounded border-2 border-e-0"
                 defaultValue="+977"
               >
                 <option value="+61">AU +61</option>
@@ -100,9 +149,9 @@ function Home() {
                 <option value="+44">UK +44</option>
                 <option value="+1">US +1</option>
               </select>
-              <input type="text" maxLength={10} placeholder="98XXXXXXXX" onInput={(e) => { e.target.value = e.target.value.replace(/[^0-9]/g, ''); }} className="border-2 outline-none px-4 py-3 rounded border-s-0" />
+              <input type="text" maxLength={10} placeholder="98XXXXXXXX" onInput={(e) => { e.target.value = e.target.value.replace(/[^0-9]/g, ''); }} className="border-2 outline-none px-3 py-2 rounded border-s-0" />
             </div>
-            <button type="submit" className="bg-[#113785] text-white px-3 py-2 rounded text-[18px]">Request Callback</button>
+            <a href="https://wa.me/+9779852024365" target="_blank" className="apply lg:pt-2 md:pt-2 sm:pt-2">Request Callback</a>
           </form>
         </div>
       </section>
@@ -165,46 +214,46 @@ function Home() {
 
       <section className="max-w-[1400px] bg-white mx-auto mb-6 mt-14">
         <div className="lg:flex justify-between container mx-auto gap-8">
-          <div className="lg:w-[46%] self-center">
+          <div className="lg:w-[65%] self-center">
             <h4 className="text-[32px] font-[500] mb-3 inline-block">
               IT Training Program
             </h4>
-            <p className="text-[18px] mb-6 text-justify">
-              IT Sikshya welcomes students and recent graduates from any university worldwide who are English proficient and eager to start a career in IT. Our Hybrid/Online 100-day Training Program provides practical experience by involving the students in real-time projects under professional guidance, allowing them to learn and build a portfolio to strengthen their resumes.
+            <p className="text-[16px] mb-6 text-justify">
+              IT Sikshya welcomes students and recent graduates from any university worldwide who are English proficient and eager to enhance their skills in IT. Our Hybrid monthly training Program provides practical experience by involving the students in real-time projects under professional guidance, allowing them to learn and build a portfolio to strengthen their resumes/Cv.
               <br /><br />
-              The program is virtual and can be joined from any location, with a focus on technical and professional skill development. The students receive a certificate of completion and, based on performance, a recommendation letter to support their professional growth. IT Sikshya is dedicated to preparing the future generation of IT professionals with hands-on experience and real-world exposure.
+              The program is virtual and can be joined from any location, with a focus on technical and professional skill development. The students receive a certificate of completion and, based on their performance, a recommendation letter to support their professional growth. IT Sikshya is dedicated to preparing the future generation of IT professionals with hands-on experience and real-world exposure.
             </p>
-            <span className="bg-[#11294D] px-3 py-2 text-white text-[18px] rounded-[15px] font-[500]">
+            <Link to={'/apply'} className="apply">
               Apply Now
-            </span>
+            </Link>
           </div>
-          <div className="lg:w-[48%] h-[450px] lg:mt-[8px] mt-8">
+          <div className="lg:w-[30%] h-[280px] lg:mt-[8px] mt-8">
             <img
               className="w-full object-cover h-full rounded"
               src="/assets/home/internship_program.jpg"
               alt="internship program"
             />
-            <p className="text-[16px] font-[500] mt-2 ">
-              Online program where interns contribute their valuable time to develop practical skills and build their careers.
+            <p className="text-[14px] mt-2 text-center">
+              Hybrid training program where Students contribute their valuable time to develop practical skills and build their careers.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="max-w-[1400px] mx-auto h-[600px] relative mt-[100px] overflow-hidden">
+      <section className="w-full mx-auto h-[580px] relative mt-[100px] overflow-hidden">
         <img
-          className="w-full h-[716px] object-cover"
+          className="w-full h-full object-cover"
           src="/assets/home/training.jpg"
           alt="banner"
         />
-        <div className="bg-[#00000071] w-full h-full absolute top-0 z-10"></div>
+        <div className="bg-[#0d5d595e] w-full h-full absolute top-0 z-10"></div>
         <div className="container  mx-auto">
           <div className="z-10 absolute top-0 transform">
-            <h4 className="text-[18px] sm:text-[18px] text-[#FFED01] lg:mt-[100px] md:mt-[80px] sm:mt-[60px] mt-[50px] font-medium">
-              Virtual & Hybrid Training
+            <h4 className="text-[18px] sm:text-[18px] text-[#0d5d59] lg:mt-[100px] md:mt-[80px] sm:mt-[60px] mt-[50px] font-medium">
+              Hybrid Training
             </h4>
             <p className="text-[24px] sm:text-[30px] text-white mt-4 font-medium leading-snug">
-              Creating Digital Nonads
+              Creating Digital Nomads
             </p>
             <p className="text-[14px] sm:text-[16px] text-white mt-4 max-w-md text-justify pe-2">
               At IT Sikshya, we believe quality education should be accessible to everyone, anywhere. Whether you learn remotely or in person, our programs offer hands-on IT skills with experienced mentors, flexible options, and real-world projects to help build a strong foundation for your career.
@@ -212,8 +261,8 @@ function Home() {
 
             {/* Stats Section */}
             <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 md:gap-16 mt-10 sm:mt-[58px]">
-              <div className="ps-3 border-s-[3px] border-[#FFED01]">
-                <h4 className="text-[#FFED01] font-semibold text-[22px] sm:text-[27px]">
+              <div className="ps-3 border-s-[3px] border-[#0d5d59]">
+                <h4 className="text-[#0d5d59] font-semibold text-[22px] sm:text-[27px]">
                   Experienced Trainers
                 </h4>
                 <p className="text-[12px] text-white mt-1">
@@ -221,8 +270,8 @@ function Home() {
                 </p>
               </div>
 
-              <div className="ps-3 border-s-[3px] border-[#FFED01]">
-                <h4 className="text-[#FFED01] font-semibold text-[22px] sm:text-[27px]">
+              <div className="ps-3 border-s-[3px] border-[#0d5d59]">
+                <h4 className="text-[#0d5d59] font-semibold text-[22px] sm:text-[27px]">
                   Recent Technologies
                 </h4>
                 <p className="text-[12px] text-white mt-1">
@@ -230,8 +279,8 @@ function Home() {
                 </p>
               </div>
 
-              <div className="ps-3 border-s-[3px] border-[#FFED01]">
-                <h4 className="text-[#FFED01] font-semibold text-[22px] sm:text-[27px]">
+              <div className="ps-3 border-s-[3px] border-[#0d5d59]">
+                <h4 className="text-[#0d5d59] font-semibold text-[22px] sm:text-[27px]">
                   Remote Freelancing
                 </h4>
                 <p className="text-[12px] text-white mt-1">
@@ -247,74 +296,31 @@ function Home() {
         <div className="container mx-auto">
           <h2 className="text-[26px] text-black font-bold mb-[35px]">Testimonials</h2>
           <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-10 mx-auto">
-            <div className="text-[16px] w-full lg:mx-0">
-              <div className="h-[225px]">
-                <img
-                  className="w-full h-full object-cover rounded"
-                  src="/assets/home/bitisha.jpg"
-                  alt="image_image_1"
-                />
-              </div>
-              <div className="paragraph text-[#183053]">
-                <div className="">
-                  <p className="text-justify pt-3 ">
-                    I enhanced my skills as a web developer during my time at Sriyog Consulting, where I built a strong foundation in modern web technologies. Specializing as a React.js Developer, I gained hands-on experience developing responsive and dynamic web applications.
-                  </p>
+            {testimonails.map((a) => (
+              <div className="text-[16px] w-full lg:mx-0">
+                <div className="h-[225px]">
+                  <img
+                    className="w-full h-full object-cover rounded"
+                    src={a.src}
+                    alt={a.name}
+                  />
                 </div>
+                <div className="paragraph text-[#183053]">
+                  <div className="">
+                    <p className="text-justify pt-3 text-[15px]">
+                      {a.description}
+                    </p>
+                  </div>
 
-                <br />
-                <p className="text-[14px]">Bitisha Thapa</p>
+                  <br />
+                  <p className="text-[14px]">{a.name}</p>
 
-                <h4 className="text-[#102A4F] font-bold text-[16px]">
-                  React Js Developer
-                </h4>
-              </div>
-            </div>
-
-            <div className="text-[16px] w-full lg:mx-0">
-              <div className="h-[228px]">
-                <img
-                  className="w-full h-full rounded"
-                  src="/assets/home/image_2.jpg"
-                  alt="image_image_2"
-                />
-              </div>
-              <div className="paragraph text-[#183053]">
-                <div className="">
-                  <p className="text-justify pt-3 ">
-                    I strengthened my expertise in front-end development at Sriyog Consulting, focusing on building seamless and efficient web applications as a React.js Developer. This experience has enhanced my ability to create dynamic and responsive user interfaces.
-                  </p>
+                  <h4 className="text-[#102A4F] font-bold text-[16px]">
+                    {a.team}
+                  </h4>
                 </div>
-                <br />
-                <p className="text-[14px]">Salina Bastola</p>
-                <h4 className="text-[#102A4F] font-bold text-[16px]">
-                  React.js Developer
-                </h4>
               </div>
-            </div>
-
-            <div className="text-[16px] w-full lg:mx-0">
-              <div className="h-[225px]">
-                <img
-                  className="w-full h-full object-cover rounded"
-                  src="/assets/home/image_3.jpg"
-                  alt="image_image_3"
-                />
-              </div>
-              <div className="paragraph text-[#183053]">
-                <div className="">
-                  <p className="text-justify pt-3 ">
-                    My early training gave me a strong creative and technical foundation as a UI/UX designer. I’m currently building on that knowledge through an internship at Sriyog, where I’m gaining hands-on experience on real-world projects and sharpening my skills."
-                  </p>
-                </div>
-
-                <br />
-                <p className="text-[14px]">Mihailo Terzic</p>
-                <h4 className="text-[#102A4F] font-bold text-[16px]">
-                  Next.js Developer
-                </h4>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -322,20 +328,20 @@ function Home() {
       <section className="max-w-[1400px] mx-auto bg-white mt-[38px]">
         <div className="container mx-auto">
           <h4 className="text-[24px] font-bold text-black">
-            Recent Intern Graduates
+            Recent Graduates
           </h4>
           <div className="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 mx-auto flex-wrap gap-y-4 text-center mt-[52px] mb-7">
             {graduates.map((a) => (
               <div className="w-[120px] mx-auto">
                 <img
-                  className="w-full"
+                  className="w-full border-4 rounded-full"
                   src={a.src}
                   alt={a.alt}
                 />
-                <p className="text-[18px] font-semibold text-[#4B4B4B] mt-1">
+                <p className="text-[16px] font-semibold text-[#4B4B4B] mt-1">
                   {a.name}
                 </p>
-                <p className="text-[16px] font-semibold text-[#4b4b4b]">{a.team}</p>
+                <p className="text-[14px] font-semibold text-[#4b4b4b]">{a.team}</p>
               </div>
             ))}
           </div>
@@ -360,9 +366,9 @@ function Home() {
                 </p>
               </div>
             </div>
-            <div className="rounded-[15px] bg-[#11294D] text-white px-3 py-1 text-[18px] font-semibold lg:w-[12%] mx-auto text-center">
-              Explore Now
-            </div>
+            <Link to={'/apply'} className="apply">
+              Apply Now
+            </Link>
           </div>
         </div>
       </section>

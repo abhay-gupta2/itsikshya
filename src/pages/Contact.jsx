@@ -5,42 +5,42 @@ function Contact() {
 
   const coordinator = [
     {
-      name: "Aasha",
-      field: "Next Js",
-      image: "/assets/contact/Aasha.png"
+      name: "Bitisha",
+      field: "React Js",
+      image: "/assets/contact/1.webp"
     },
 
     {
       name: "Madan",
       field: "React Js",
-      image: "/assets/contact/madan.png"
+      image: "/assets/contact/2.webp"
     },
 
     {
-      name: "Kritika",
-      field: "UI/UX",
-      image: "/assets/coordinator/supriya.png"
+      name: "Aashma",
+      field: "Backend",
+      image: "/assets/contact/3.webp"
     }
   ]
 
   useEffect(() => {
-    document.title = "IT Sikshya Contact | Professional Marketplace"
+    document.title = "Contact | IT Sikshya Contact"
   }, []);
   return (
     <>
       <section className='w-full mx-auto bg-[#8D8D8D]'>
-        <div className="container mx-auto py-[40px]">
+        <div className="container mx-auto py-[40px] ">
           <h4 className='text-[36px] font-semibold text-white'><Link to={'/'}>Training</Link> / <span className='text-[20px] font-[400] text-[#eeee]'>Contact</span></h4>
         </div>
       </section>
       <section className='max-w-[1400px] w-full mb-6 mt-12 mx-auto bg-white'>
         <div className='container mx-auto'>
-          <h2 className='text-[32px] font-bold'>Welcome to IT Sikshya</h2>
-          <p className='text-[22px] font-medium'>Empowering the next generation of tech enthusiasts!</p>
-          <p className='text-[20px] font-thin'>At IT Sikshya, we’re dedicated to providing practical, high-quality IT education to help you kickstart and grow your career in the tech industry. Whether you're just beginning or looking to sharpen your skills, you're in the right place.</p>
+          <h2 className='text-[28px] font-bold mb-4'>Welcome to IT Sikshya</h2>
+          <p className='text-[20px] font-medium'>Empowering the next generation of tech enthusiasts!</p>
+          <p className='text-[18px] font-thin'>At IT Sikshya, we’re dedicated to providing practical, high-quality IT training to help you kickstart and grow your career in the tech industry. Whether you're just beginning or looking to sharpen your skills, you're in the right place.</p>
         </div>
         <div className="mx-auto h-[700px] max-w-[1380px] w-full px-4 py-4">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7237.268747271204!2d85.32061524339905!3d27.711079113837975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e3ff83574d%3A0x23e6caecc2eba3c0!2sRem.work%20HQ!5e0!3m2!1sen!2snp!4v1745487637094!5m2!1sen!2snp" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1975926761847!2d85.32069667465584!3d27.711184876180305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ef740a066ed089%3A0xaf7934e44a7b1e17!2sSRIYOG!5e0!3m2!1sen!2snp!4v1748755063741!5m2!1sen!2snp" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
         </div>
       </section>
 
@@ -91,10 +91,10 @@ function Contact() {
             {coordinator.map((a) => (
               <div className='text-center flex flex-col gap-0 mx-auto'>
                 <div className='w-[200px]'>
-                  <img className='mx-auto w-full' src={a.image} alt={a.name} />
+                  <img className='mx-auto w-full border-4 rounded-full' src={a.image} alt={a.name} />
                 </div>
-                <h3 className='text-[20px] font-medium'>{a.name}</h3>
-                <p className='text-[16px]'>{a.field}</p>
+                <h3 className='text-[16px] font-medium'>{a.name}</h3>
+                <p className='text-[14px]'>{a.field}</p>
               </div>
             ))}
           </div>

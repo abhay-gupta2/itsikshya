@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Disclaimer() {
   useEffect(() => {
-      document.title = "IT Sikshya Disclaimer | Professional Marketplace"
+      document.title = "Disclaimer | IT Sikshya"
     }, []);
   return (
     <>

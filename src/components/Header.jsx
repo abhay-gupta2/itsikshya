@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const crossIcon = "/assets/icons/cross.svg";
 const hamburgerIcon = "/assets/icons/hamburger-menu.svg";
 
@@ -26,40 +26,34 @@ function Header() {
               <Link className="flex gap-2 items-center" to={"/"}>
                 <img
                   className="w-[60px]"
-                  src="/assets/logo/logo.svg"
-                  alt="SRIYOG_logo"
+                  src="/assets/logo/it-sikshya-logo.svg"
+                  alt="IT Sishya logo"
                 />
-                <span className="text-[20px] text-[#113785] font-medium">IT Sikshya</span>
+                <span className="text-[20px] text-[#0d5d59] font-medium">IT Sikshya</span>
               </Link>
             </div>
-            <ul className=" hidden lg:flex gap-6 text-[#113785] text-[20px]">
-              <li>
-                <Link to={"/"}>Home</Link>
-              </li>
-              <li>
-                <Link to={"/about"}>About</Link>
-              </li>
-              <li>
-                <Link to={"/faqs"}>FAQs</Link>
-              </li>
-              <li>
-                <Link to={"/eligibility"}>Eligibility</Link>
-              </li>
-              <li>
-                <Link to={"/testimonials"}>Testimonials</Link>
-              </li>
-              <li>
-                <Link to={"/courses"}>Courses</Link>
-              </li>
-              <li>
-                <Link to={"/contact"}>Contact</Link>
-              </li>
-            </ul>
-            <div className="lg:flex gap-2 items-center hidden">
-              <div className="font-[700] p-1 px-2 bg-[#11294D] rounded-[10px] text-white">
-                <Link to={"/apply"}>Apply Now</Link>
-              </div>
-              <div className="h-[35px] w-[2px] bg-[#11294D]"></div>
+
+            <div className="lg:flex gap-6 items-center hidden">
+              <ul className=" hidden lg:flex gap-6 text-[#333] text-[18px]">
+                {[
+                  { path: '/', lable: 'Home' },
+                  { path: '/about', lable: 'About' },
+                  { path: '/faqs', lable: 'FAQs' },
+                  { path: '/courses', lable: 'Courses' },
+                  { path: '/contact', lable: 'Contact' }
+                ].map((a) => (
+                  <li>
+                    <NavLink to={a.path} className={({ isActive }) =>
+                      isActive ? "text-[#0d5d59]" : "hover:text-[#0d5d59]"
+                    }>{a.lable}</NavLink>
+                  </li>
+                ))}
+              </ul>
+
+              <Link className="apply" to={"/apply"}>
+                Apply Now
+              </Link>
+              <div className="h-[35px] w-[2px] bg-[#0d5d59]"></div>
               <a href="mailto:info@sriyog.com">
                 <img
                   className="w-[35px]"
@@ -78,20 +72,18 @@ function Header() {
                 <img
                   src={isMenuOpen ? crossIcon : hamburgerIcon}
                   alt="menu-toggle"
-                  className={`w-[30px] transition-transform duration-300 ${
-                    isMenuOpen ? "rotate-90" : "rotate-0"
-                  }`}
+                  className={`w-[30px] transition-transform duration-300 ${isMenuOpen ? "rotate-90" : "rotate-0"
+                    }`}
                 />
               </button>
             </div>
 
             {/* Mobile Menu Dropdown */}
             <div
-              className={`absolute top-[100%] left-0 w-full bg-white shadow-md z-40 transition-all duration-300 overflow-hidden ${
-                isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-              } lg:hidden`}
+              className={`absolute top-[100%] left-0 w-full bg-white shadow-md z-40 transition-all duration-300 overflow-hidden ${isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                } lg:hidden`}
             >
-              <ul className="flex flex-col gap-4 p-4 text-[#113785] text-[18px]">
+              <ul className="flex flex-col gap-4 p-4 text-[#0d5d59] text-[18px] items-center">
                 <li>
                   <Link to="/" onClick={() => setIsMenuOpen(false)}>
                     Home
@@ -115,22 +107,6 @@ function Header() {
                 </li>
                 <li>
                   <Link
-                    to="/eligibility"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Eligibility
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/testimonials"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Testimonials
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="/courses"
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -149,7 +125,7 @@ function Header() {
                   <Link
                     to="/apply"
                     onClick={() => setIsMenuOpen(false)}
-                    className="font-semibold text-white bg-[#11294D] rounded-md px-3 py-1 text-center"
+                    className="apply"
                   >
                     Apply Now
                   </Link>

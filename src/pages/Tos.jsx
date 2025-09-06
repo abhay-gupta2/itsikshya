@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Tos() {
   useEffect(() => {
-      document.title = "IT Sikshya Terms of Service | Professional Marketplace"
+      document.title = "Terms of Service | IT Sikshya"
     }, []);
   return (
     <>

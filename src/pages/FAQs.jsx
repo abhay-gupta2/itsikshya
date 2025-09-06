@@ -8,48 +8,48 @@ function FAQs() {
     setOpen(open === index ? null : index);
   };
 
- const faqData = [
-  {
-    question: "1. Who can join IT Sikshya's courses?",
-    answer: "Anyone with a passion for technology can join. We accept students from all academic backgrounds.",
-  },
-  {
-    question: "2. Are the courses online or offline?",
-    answer: "We offer both online and offline courses to cater to different learning preferences.",
-  },
-  {
-    question: "3. How long do the courses last?",
-    answer: "The duration of each course varies. Most courses are designed to be completed in 2-3 months.",
-  },
-  {
-    question: "4. Do I need any prior experience to join?",
-    answer: "No prior experience is required for most courses, although basic computer knowledge is helpful.",
-  },
-  {
-    question: "5. How can I apply for a course?",
-    answer: "You can apply directly on our website by filling out the application form under the Apply Now section.",
-  },
-  {
-    question: "6. Are the courses free?",
-    answer: "No, the courses are paid. However, we offer competitive pricing and flexible payment options.",
-  },
-  {
-    question: "7. Will I get a certificate after completing the course?",
-    answer: "Yes, all our students receive a certificate of completion after finishing their course.",
-  },
-  {
-    question: "8. How do I pay for the course?",
-    answer: "Payment options include online bank transfers, credit cards, and other digital payment methods.",
-  },
-];
+  const faqData = [
+    {
+      question: "1. Who can join IT Sikshya's courses?",
+      answer: "Anyone with a passion for technology can join. We accept students from all academic backgrounds.",
+    },
+    {
+      question: "2. Are the courses online or offline?",
+      answer: "We offer both online and offline courses to cater to different learning preferences.",
+    },
+    {
+      question: "3. How long do the courses last?",
+      answer: "The duration of each course varies. Most courses are designed to be completed in 2-3 months.",
+    },
+    {
+      question: "4. Do I need any prior experience to join?",
+      answer: "No prior experience is required for most courses, although basic computer knowledge is helpful.",
+    },
+    {
+      question: "5. How can I apply for a course?",
+      answer: "You can apply directly on our website by filling out the application form under the Apply Now section.",
+    },
+    {
+      question: "6. Are the courses free?",
+      answer: "No, the courses are paid. However, we offer competitive pricing and flexible payment options.",
+    },
+    {
+      question: "7. Will I get a certificate after completing the course?",
+      answer: "Yes, all our students receive a certificate of completion after finishing their course.",
+    },
+    {
+      question: "8. How do I pay for the course?",
+      answer: "Payment options include online bank transfers, credit cards, and other digital payment methods.",
+    },
+  ];
 
 
   useEffect(() => {
-      document.title = "IT Sikshya FAQs | Professional Marketplace"
-    }, []);
+    document.title = "FAQs | IT Sikshya"
+  }, []);
   return (
     <>
-    <section className='w-full mx-auto bg-[#8D8D8D]'>
+      <section className='w-full mx-auto bg-[#8D8D8D]'>
         <div className="container mx-auto py-[40px]">
           <h4 className='text-[36px] font-semibold text-white'><Link to={'/'}>Training</Link> / <span className='text-[20px] font-[400] text-[#eeee]'>FAQs</span></h4>
         </div>
@@ -57,14 +57,14 @@ function FAQs() {
       <section className="max-w-[1400px] bg-[#1AA399] mb-6 mt-12 mx-auto">
         <div className="container mx-auto pt-[50px] pb-[40px] text-center">
           <h2 className="font-[600] text-[36px] text-white">
-            Kickstart Your Career with IT Sikshya
+            Kickstart Your Career in IT
           </h2>
-          <p className="text-[20px] text-white text-center my-4">
+          <p className="text-[18px] text-white text-center my-4">
             Sikshya offers a 100-day online IT training for students and graduates to gain real-world experience, build a portfolio, and boost their careers—from anywhere in the world.
           </p>
-          <div className="mx-auto w-[201px] px-4 py-1 text-[20px] bg-[#FCDB2E] text-center rounded-[10px]">
+          <Link to={'/apply'} className="apply w-28 mx-auto">
             Apply Now
-          </div>
+          </Link>
         </div>
       </section>
 
@@ -95,9 +95,8 @@ function FAQs() {
                         {a.question}
                       </span>
                       <img
-                        className={`w-8 transform transition-transform ${
-                          open === index ? "rotate-180" : ""
-                        }`}
+                        className={`w-8 transform transition-transform ${open === index ? "rotate-180" : ""
+                          }`}
                         src="/assets/icons/down-arrow.svg"
                         alt="down"
                       />
@@ -119,7 +118,7 @@ function FAQs() {
         </div>
       </section>
 
-      <section className="max-w-[100%] h-full mx-auto bg-[#522298] mb-6 mt-12">
+      <section className="max-w-[100%] h-full mx-auto bg-[#0d5d59] mb-6 mt-12">
         <div className="container mx-auto pt-10 pb-10 overflow-hidden">
           {/* <img
             className=""
@@ -143,7 +142,7 @@ function FAQs() {
               />
             </div>
             <div className="p-4 bg-white mb-6 flex flex-col gap-6 items-center">
-              <p className="text-[32px] font-bold text-[#522298] text-center">
+              <p className="text-[32px] font-bold text-[#0d5d59] text-center">
                 Find Your Program
               </p>
               <p className="text-[20px] text-center">
@@ -156,26 +155,27 @@ function FAQs() {
                 <select
                   name="program"
                   id="program"
+                  defaultValue=""
                   className="border-2 px-3 py-1 rounded-[10px] outline-none"
                 >
-                  <option value="" disabled selected>
-                    --Please Select--
-                  </option>
-                  <option value="ui/ux">UI/UX</option>
-                  <option value="web_development">Web Development</option>
-                  <option value="app_development">App Development</option>
-                  <option value="social_media_management">
-                    Social Media Management
-                  </option>
-                  <option value="data_science">Data Science</option>
-                  <option value="java">Java</option>
+                  <option value="" disabled>Select a Course</option>
+                  <option value="uiux">UI/UX</option>
+                  <option value="reactjs">React Js</option>
+                  <option value="nextjs">Next Js</option>
+                  <option value="mongodb">Mongo DB</option>
+                  <option value="flutter">Flutter</option>
+                  <option value="reactnative">React Native</option>
+                  <option value="pitchdeck">Pitch Deck Creation</option>
+                  <option value="webdesign">Web Design</option>
+                  <option value="mobiledev">Mobile App Development</option>
                 </select>
-                <button
-                  type="submit"
-                  className="bg-[#FF6B01] px-6 py-1 mx-auto w-[80%] rounded-[15px] text-white text-[20px]"
+
+                <Link
+                  to="/apply"
+                  className="apply"
                 >
-                  Next Step
-                </button>
+                  Apply Now
+                </Link>
               </form>
             </div>
           </div>
@@ -193,16 +193,16 @@ function FAQs() {
               />
             </div>
             <div className="lg:w-[60%]">
-              <p className="text-[#5224B2] text-[22px] mb-4">
+              <p className="text-[#5224B2] text-[18px] mb-4">
                 THE IT SIKSHYA DIFFERENCE
               </p>
-              <p className="text-[30px] leading-none">
+              <p className="text-[26px] leading-none">
                 A global training platform designed to launch your IT career
               </p>
-              <p className="text-[20px] text-[#4b4b4b] my-5">
+              <p className="text-[16px] text-[#4b4b4b] my-5">
                 IT Sikshya is committed to empowering students and recent graduates with the skills and experience needed to thrive in the tech industry.
               </p>
-              <p className="text-[20px] text-[#4b4b4b]">
+              <p className="text-[18px] text-[#4b4b4b]">
                 Here’s what sets IT Sikshya apart:
               </p>
               <div className="flex flex-col gap-3">
